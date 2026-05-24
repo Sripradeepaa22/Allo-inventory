@@ -4,11 +4,6 @@ A full-stack inventory reservation system built with Next.js 14, Prisma, Supabas
 
 ---
 
-## Live Demo
-
-> Deploy to Vercel (instructions below) and paste your URL here.
-
----
 
 ## Tech Stack
 
