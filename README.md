@@ -55,10 +55,13 @@ cp .env.example .env
 Edit `.env`:
 
 ```env
-DATABASE_URL="postgresql://postgres.[PROJECT-REF]:[PASSWORD]@aws-0-ap-south-1.pooler.supabase.com:6543/postgres?pgbouncer=true"
-DIRECT_URL="postgresql://postgres.[PROJECT-REF]:[PASSWORD]@aws-0-ap-south-1.pooler.supabase.com:5432/postgres"
-UPSTASH_REDIS_REST_URL="https://YOUR.upstash.io"
-UPSTASH_REDIS_REST_TOKEN="YOUR_TOKEN"
+# Connect to Supabase via connection pooling
+DATABASE_URL="postgresql://postgres.bmjanqnhdkapujfyoipu:pfic2EmTr6mSmPha@aws-1-ap-south-1.pooler.supabase.com:6543/postgres?pgbouncer=true"
+# Direct connection to the database. Used for migrations
+DIRECT_URL="postgresql://postgres.bmjanqnhdkapujfyoipu:pfic2EmTr6mSmPha@aws-1-ap-south-1.pooler.supabase.com:5432/postgres"
+ UPSTASH_REDIS_REST_URL="https://evolved-tortoise-102691.upstash.io"
+ UPSTASH_REDIS_REST_TOKEN="gQAAAAAAAZEjAAIgcDI3N2VlM2M3NWIxZGY0NWZiODI1M2MzNDdlNWViZGE2Yg"
+CRON_SECRET="hello-123"
 ```
 
 ### 5. Run migrations and seed
